@@ -44,3 +44,5 @@ view the system interface after performing the following command
 ```python
 python manage.py runserver
 ```
+
+Once completed push code and create a pull request so that I may be notified
