@@ -1,2 +1,2 @@
 # online_systems_python
-An online system that can be used for demonstrations
+A python online system that can be used for demonstrations
