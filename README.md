@@ -119,3 +119,25 @@ for index, post in enumerate(posts):
 ```
 
 Once completed push code and create a pull request so that I may be notified
+
+Task 14:
+create a model manager for managing published posts
+```python
+class PublishedManager(models.Manager):
+ def get_queryset(self):
+        return super(PublishedManager,
+                self).get_queryset()\
+                .filter(status='published')
+```
+
+Task 15:
+Show all published posts on the web portal i.e in a html page
+```python
+from django.shortcuts import render, get_object_or_404
+from .models import Post
+def post_list(request):
+ posts = Post.published.all()
+ return render(request,
+ 'blog/post/list.html',
+ {'posts': posts})
+```
