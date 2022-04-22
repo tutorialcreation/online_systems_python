@@ -1,11 +1,14 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <pre>{{post}}</pre>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-center mb-3">My Posts</h1>
+<div class="card mb-3">
+    <div class="card-body">
+    {% for post in posts %}
+      <h2 class="lead" style="color:green">{{ post }}</h2>
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
