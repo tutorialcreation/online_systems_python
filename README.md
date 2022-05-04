@@ -189,3 +189,13 @@ In the post/list.html include the pagination page
  {% include "pagination.html" with page=posts %}
 {% endblock %}
 ```
+
+Task 19:
+Perform the following tasks
+• Create a form for users to fill in their name, their email, the email recipient,
+and optional comments
+• Create a view in the views.py file that handles the posted data and sends
+the email
+• Add a URL pattern for the new view in the urls.py file of the blog
+application
+• Create a template to display the form
