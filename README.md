@@ -191,6 +191,7 @@ In the post/list.html include the pagination page
 ```
 
 Task 19:
+
 Perform the following tasks
 • Create a form for users to fill in their name, their email, the email recipient,
 and optional comments
